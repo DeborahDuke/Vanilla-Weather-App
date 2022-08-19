@@ -15,7 +15,6 @@ function formatDate(timestamp){
 }
 
 function displayTemperature(response){
-    console.log(response.data);
     let temperatureElement = document.querySelector("#temperature");
     temperatureElement.innerHTML = Math.round(response.data.main.temp); //so this replaces the temperture displayed on the page with the temp of the city you typed in
     let cityElement = document.querySelector("#city");
